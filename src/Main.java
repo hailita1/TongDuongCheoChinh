@@ -10,7 +10,10 @@ public class Main {
             n = scanner.nextInt();
             System.out.print("Nhap vao so cot: ");
             m = scanner.nextInt();
-        } while (m != n)
+            if (m != n) {
+                System.out.println("Moi nhap lai: ");
+            }
+        } while (m != n);
         int[][] matrix = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
